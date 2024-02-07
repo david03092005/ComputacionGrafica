@@ -1,1 +1,2 @@
 C:\Users\sala\Desktop\GLSL_Lighting\Debug\TemplateProject.exe
+C:\Users\sala\Desktop\ComputacionGrafica\Debug\TemplateProject.exe

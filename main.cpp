@@ -11,6 +11,7 @@
 #include <time.h>
 #include "Elementos.h"
 #include "Tetera.h"
+#include "Personaje.h"
 
 //-----------------------------------------------------------------------------
 
@@ -25,32 +26,46 @@ protected:
    float timer010;  // timer counting 0->1->0
    bool bUp;        // flag if counting up or down.
    Elementos *elemento;
-   Tetera* tetera;
+   Tetera *tetera;
+   Personaje* personaje;
 
 
 public:
 	myWindow(){}
 
-	virtual void OnRender(void)
-	{
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	
-      //timer010 = 0.09; //for screenshot!
-      glPushMatrix();
-      if (shader) shader->begin();
-         //glRotatef(timer010*360, 0.5, 1.0f, 0.1f);
-         glTranslatef(0, 0, -8);
-            
-         tetera->DibujarTetera(1, 3, 0, 0);
-         tetera->DibujarTetera(1, -3, 0, 0);
-         tetera->DibujarTetera(1, 0, -3, 0);
-         elemento->DibujarElementos(-1, 0, 0);
+	virtual void OnRender(void){
+	    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	    
+        //timer010 = 0.09; //for screenshot!
+        glPushMatrix();
+        if (shader) shader->begin();
+        //glRotatef(timer010*360, 0.5, 1.0f, 0.1f);
+        glTranslatef(0, 0, -90);
+        
+        personaje->DibujarPersonaje(2000, 0.3, 1, 1, 1);
 
-     if (shader) shader->end();
-      glutSwapBuffers();
-      glPopMatrix();
+        personaje->DibujarPersonaje(2000, 0.6, 1, 1, 1);
 
-      UpdateTimer();
+        personaje->DibujarPersonaje(2000, 0.9, 1, 1, 1);
+
+        personaje->DibujarPersonaje(2000, 1.2, 1, 1, 1);
+
+        personaje->DibujarPersonaje(2000, 1.5, 1, 1, 1);
+
+        personaje->DibujarPersonaje(2000, 1.8, 1, 1, 1);
+
+        /*
+        tetera->DibujarTetera(1, 3, 0, 0);
+        tetera->DibujarTetera(1, -3, 0, 0);
+        tetera->DibujarTetera(1, 0, -3, 0);
+        elemento->DibujarElementos(-1, 0, 0);
+        */
+
+        if (shader) shader->end();
+        glutSwapBuffers();
+        glPopMatrix();
+
+        UpdateTimer();
 
 		Repaint();
 	}

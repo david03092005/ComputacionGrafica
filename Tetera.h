@@ -8,8 +8,7 @@
 #include "glsl.h"
 #include <time.h>
 
-class Tetera
-{
+class Tetera {
 	public:
 		Tetera() {};
 		void DibujarTetera(float size, float x, float y, float z);

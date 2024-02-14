@@ -71,6 +71,7 @@
     </ClInclude>
     <ClInclude Include="Elementos.h" />
     <ClInclude Include="Tetera.h" />
+    <ClInclude Include="Personaje.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glew\source\glew.c">
@@ -157,6 +158,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Elementos.cpp" />
     <ClCompile Include="Tetera.cpp" />
+    <ClCompile Include="Personaje.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="freeglut\source\freeglutdll.def">

@@ -8,8 +8,7 @@
 #include "glsl.h"
 #include <time.h>
 
-class Elementos
-{
+class Elementos {
 	public:
 		Elementos() {};
 		void DibujarElementos(float x, float y, float z);

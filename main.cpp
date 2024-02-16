@@ -40,19 +40,19 @@ public:
         glPushMatrix();
         if (shader) shader->begin();
         //glRotatef(timer010*360, 0.5, 1.0f, 0.1f);
-        glTranslatef(0, 0, -90);
+        glTranslatef(0, 0, -38);
         
-        personaje->DibujarPersonaje(2000, 0.3, 1, 1, 1);
+        personaje->DibujarPersonaje(2000, 0.3, 0.5, 0.2, 0.5);
 
-        personaje->DibujarPersonaje(2000, 0.6, 1, 1, 1);
+        personaje->DibujarPersonaje(2000, 0.6, 0.5, 0.2, 0.5);
 
-        personaje->DibujarPersonaje(2000, 0.9, 1, 1, 1);
+        personaje->DibujarPersonaje(2000, 0.9, 0.5, 0.2, 0.5);
 
-        personaje->DibujarPersonaje(2000, 1.2, 1, 1, 1);
+        personaje->DibujarPersonaje(2000, 1.2, 0.5, 0.2, 0.5);
 
-        personaje->DibujarPersonaje(2000, 1.5, 1, 1, 1);
+        personaje->DibujarPersonaje(2000, 1.5, 0.5, 0.2, 0.5);
 
-        personaje->DibujarPersonaje(2000, 1.8, 1, 1, 1);
+        personaje->DibujarPersonaje(2000, 1.8, 0.5, 0.2, 0.5);
 
         /*
         tetera->DibujarTetera(1, 3, 0, 0);
